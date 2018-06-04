@@ -1,0 +1,50 @@
+changelog
+
+===================================================
+10-19-2014
+===================================================
+	- Started the separation of the game itself from the engine
+	- Reworked GameStateManager
+		+ Now independent of the game itself, essentially turning it a part of the engine
+	- Reworked TileMap system
+		+ Made a separate Camera and TileSet classes
+		+ TileMap now uses instances of the Camera and TileSet classes
+		
+===================================================
+10-24-2014
+===================================================
+	- Scrapped making MovingEntity's fields as private, they are now returned to protected
+	
+	
+	
+===================================================
+11-09-2014
+===================================================
+	- Major re-factoring
+		+ Adoption of component decoupling pattern
+	- Added PhysicsComponent for player, seems to be working fine
+		+ Edit: PhysicsComponent for Characters
+	- Added InputComponent for player, seems to be working fine
+	- Added RenderingComponent for RenderableCharacter
+	
+===================================================
+11-09-2014
+===================================================
+	- Arrow, ArrowPhysics and ArrowRender seems to be working
+	
+===================================================
+11-17-2014
+===================================================
+	- Changes to Entity interfaces, and who implements them
+	- Changed components: physics, renderer
+	- Created CombatStatComponent to handle attack and health mechanics
+
+	
+===================================================
+11-18-2014
+===================================================
+	- Collision between entities seems to be working
+	- Enemy hitting and damaging player: tested - working
+	- Player projectile hitting and damaging enemy: tested - working
+
+	
